@@ -2,7 +2,7 @@ console.log("Start");
 
 const x = 10;
 
-const y = 20;
+const y = 205;
 
 const z = 500;
 
