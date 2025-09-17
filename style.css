@@ -56,11 +56,11 @@ p {
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 50px;
-    cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .test-button::before {
