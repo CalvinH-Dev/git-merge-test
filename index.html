@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="UTF-8" />
+
 		<meta name="viewport Test" content="width=device-width, initial-scale=1.0" />
 		<script type="module" src="index.js"></script>
 		<title>Document</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Git Merge Conflict Test</title>
+		<link rel="stylesheet" href="style.css" />
+
 	</head>
 	<body>
-		<div>
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio temporibus harum nemo ex
-				asperiores consequuntur quibusdam aliquam, maxime excepturi inventore officia quia nulla
-				neque voluptatum nostrum esse at! Adipisci, voluptate?
-			</p>
+		<div class="container">
+			<h1>Git Merge Conflict Test Project</h1>
+			<p>Dieses Projekt ist zum Testen von Git Merge Konflikten erstellt.</p>
+
+			<div class="button-section">
+				<button class="test-button" onclick="showMessage()">Test Button</button>
+				<p id="message" class="hidden">Button wurde geklickt!</p>
+			</div>
+
+			<div class="git-commands">
+				<h2>Git Commands in der richtigen Reihenfolge:</h2>
+				<ol>
+					<li><code>git status</code> - Zeigt aktuelle Änderungen</li>
+					<li><code>git add .</code> - Staged alle Änderungen</li>
+					<li><code>git commit -m "message"</code> - Erstellt Commit</li>
+					<li><code>git branch feature-branch</code> - Erstellt neuen Branch</li>
+					<li><code>git checkout feature-branch</code> - Wechselt zu Branch</li>
+					<li><code>git merge main</code> - Merged main in current branch</li>
+					<li><code>git push origin branch-name</code> - Pushed Branch</li>
+				</ol>
+			</div>
+
+			<div class="conflict-resolution">
+				<h2>Merge Konflikte lösen:</h2>
+				<ul>
+					<li><code>git status</code> - Zeigt konfliktreiche Dateien</li>
+					<li>Öffne die Datei und löse die Konflikte</li>
+					<li><code>git add dateiname</code> - Markiert Konflikt als gelöst</li>
+					<li><code>git commit Test</code> - Schließt Merge ab</li>
+				</ul>
+			</div>
 		</div>
+
+		<script>
+			function showMessage() {
+				const message = document.getElementById("test_message");
+				console.log("neu");
+				message.classList.toggle("hidden");
+
+				const x = 20;
+				const y = 30;
+				const sum = x + 10;
+			}
+		</script>
 	</body>
 </html>
